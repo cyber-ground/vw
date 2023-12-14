@@ -63,7 +63,7 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
     docElem.style.setProperty('--h', `${frontContentHgt}px`);
 
 //* create square grid  -----------------
-  
+(() => { 
   const matchedNumForGrid = 144; //* 12*12
   const spareGrid = document.querySelector('.square-grid');
   function createSquareGrid() {
@@ -74,13 +74,13 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
     }
   } createSquareGrid(); //*>
   const squares = document.querySelectorAll('.square'); //*>
-
+})();
 //* create hero block grid & block grid events -----------------
 
   const heroImageContainer = document.querySelector('.hero-image-container');
   const heroBlockGrid = heroImageContainer.querySelector('.hero-block-grid');
   const heroImage = heroImageContainer.querySelector('.hero-image');
-
+  (() => { 
   function createHeroBlocksGrid() {
     for (let i = 0; i < matchedNumForGrid; i++) { 
       const block = document.createElement('div');
@@ -89,7 +89,7 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
     }
   } createHeroBlocksGrid(); //*>
   const heroBlocks = heroBlockGrid.querySelectorAll('.block'); //*>
-
+})();
   heroBlocks.forEach(block => { 
     block.addEventListener('mouseenter', () => {
       block.style.backgroundColor = 'rgba(255, 255, 200, 0.4)';
