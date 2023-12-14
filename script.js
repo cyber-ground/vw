@@ -63,17 +63,17 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
     docElem.style.setProperty('--h', `${frontContentHgt}px`);
 
 //* create square grid  -----------------
-
-  const matchedNumForGrid = 144; //* 12*12
-  const spareGrid = document.querySelector('.square-grid');
-  function createSquareGrid() {
-    for (let i = 0; i < matchedNumForGrid; i++) {
-      const square = document.createElement('div');
-      square.classList.add('square');
-      spareGrid.appendChild(square);
-    }
-  } createSquareGrid(); //*>
-  const squares = document.querySelectorAll('.square'); //*>
+  
+    const matchedNumForGrid = 144; //* 12*12
+    const spareGrid = document.querySelector('.square-grid');
+    function createSquareGrid() {
+      for (let i = 0; i < matchedNumForGrid; i++) {
+        const square = document.createElement('div');
+        square.classList.add('square');
+        spareGrid.appendChild(square);
+      }
+    } createSquareGrid(); //*>
+    const squares = document.querySelectorAll('.square'); //*>
 
 //* create hero block grid & block grid events -----------------
 
