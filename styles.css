@@ -18,12 +18,12 @@
 }
 @font-face {
   font-family: "RM Neue-light";
-  src: local("RM Neue Light"), local("RMNeue-Light"), url("RMNeue-Light.ttf") format("truetype");
+  src: local("RM Neue Light"), local("RMNeue-Light"), url("font/RMNeue-Light.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
   font-family: "RM Neue-Regular";
-  src: local("RM Neue Regular"), local("RMNeue-Regular"), url("RMNeue-Regular.ttf") format("truetype");
+  src: local("RM Neue Regular"), local("RMNeue-Regular"), url("font/RMNeue-Regular.ttf") format("truetype");
   font-display: swap;
 }
 @font-face {
