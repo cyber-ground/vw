@@ -5,7 +5,7 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
 // ------------------------------------------------------------------------------------------
 //*                               ----- VRTL WRLD -----
 // ------------------------------------------------------------------------------------------
-scrollTo(0,0);
+
   const lenis = new Lenis();
     function raf(time) {
       lenis.raf(time/3);
@@ -683,7 +683,7 @@ let rotation = false;
   });
 
   pleasuresImageWrapper.addEventListener('click', () => {
-    location.href = '/';
+    location.href = 'index.html';
   });
 
   function setPleasuresStickyStart() { //*>
