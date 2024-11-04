@@ -168,7 +168,7 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
         }, 700);
       });
       learnWrapper.addEventListener('click', () => {
-        location.href = '/index.html';
+        location.href = '#';
       });
     });
   });
