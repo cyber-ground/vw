@@ -36,10 +36,13 @@
   src: local("Gridular Regular"), local("Gridular-Regular"), url("font/Gridular-Regular.ttf") format("truetype");
   font-display: swap;
 }
+html {
+  scrollbar-width: none;
+}
+
 body {
   background-color: #f1f1f1;
   min-height: 100vh;
-  scrollbar-width: none;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -409,6 +412,7 @@ body::-webkit-scrollbar {
 }
 .container .sticky-container .front .front-content section.hero-bottom .hero-trf-text-wrapper .learn-wrapper .btn-learn .fa-angle-right {
   color: #bbb;
+  pointer-events: none;
 }
 .container .sticky-container .front .front-content section.black {
   transform-style: preserve-3d;
