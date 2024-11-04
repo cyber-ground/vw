@@ -5,7 +5,7 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
 // ------------------------------------------------------------------------------------------
 //*                               ----- VRTL WRLD -----
 // ------------------------------------------------------------------------------------------
-
+scrollTo(0,0);
   const lenis = new Lenis();
     function raf(time) {
       lenis.raf(time/3);
@@ -168,7 +168,7 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
         }, 700);
       });
       learnWrapper.addEventListener('click', () => {
-        location.href = '#';
+        location.href = 'index.html';
       });
     });
   });
@@ -352,7 +352,7 @@ import {console_color,console_red,console_orange,console_yellow,console_green,
   blackImageW.style.top = innerHeight/2 - blackImageW.clientHeight/2 + 'px'; //* init
   blackImageW.style.left = innerWidth/2 - blackImageW.clientWidth/2 + 'px'; //* init
   
-  // let scrollendScrollY = 0; //* currently unused here
+  // let scrollendScrollY = 0; //* used write in here went to kryptoz
   let [val, count, scrollEndVal] = [0,0,0]; 
   let [stickyStartScrollY, stickyEndScrollY] = [[],[]];
   let [sticky, activation, cornerActive] = [false,false,false]; 
@@ -808,7 +808,7 @@ let rotation = false;
   });
 
   interactWrapper.addEventListener('click', () => {
-    location.href = '/';
+    location.href = 'index.html';
   });
 
   function contactHeadlineTextRotation() {
@@ -972,7 +972,7 @@ let rotation = false;
   });
 
   entryWrapper.addEventListener('click', () => {
-    location.href = '/';
+    location.href = 'index.html';
   });
 
 
@@ -1576,6 +1576,9 @@ let rotation = false;
     scrollEndVal = val;
   });
 
+
+//* -------------------------------------------------------------------
+  //* example for later note ---
   //* abort scrolling & remove eventListener & resume ---
   // window.addEventListener('wheel', disableWheel, {passive:false})
   // function disableWheel(e) { //*** Super important ***//
@@ -1586,7 +1589,7 @@ let rotation = false;
   //     }, 5000);
   //   }
   // } 
-
+//* -------------------------------------------------------------------
 //* -----------------------------------------------------------------------------------------
 
   //* inside text request event ------------------------------------------
@@ -1612,7 +1615,7 @@ let rotation = false;
   });
 
   requestWrapper.addEventListener('click', () => {
-    location.href = '/';
+    location.href = 'index.html';
   });
 
 //* inside nav menu text ------------------------------------------
